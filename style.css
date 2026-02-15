@@ -1,21 +1,33 @@
 * { margin: 0; padding: 0; }
 body { font-family: sans-serif; }
 
-/* Hero Section Styles */
-#header {
+/* Navigation Bar */
+#nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-image: linear-gradient(to right, #a517ba, #5f1178);
+    padding: 0 !important;
+}
+.navbar-brand img { height: 40px; padding-left: 20px; }
+.navbar-nav li { padding: 0 10px; }
+.navbar-nav li a { color: #fff !important; font-weight: 600; float: right; }
+
+/* Banner Section */
+#banner {
     background-image: linear-gradient(to right, #a517ba, #5f1178);
     color: #fff;
-    padding-top: 2%;
+    padding-top: 5%;
     position: relative;
 }
-.navbar { padding: 0 !important; }
-.navbar-brand img { height: 40px; padding-left: 20px; }
-.nav-link { color: #fff !important; font-weight: 600; margin-left: 20px; }
-.hero-content { margin-top: 100px; padding-bottom: 150px; }
-.play-btn { width: 45px; margin-right: 10px; }
+.promo-title { font-size: 40px; font-weight: 600; margin-top: 100px; }
+.play-btn { width: 45px; margin: 20px; }
+#banner a { color: #fff; text-decoration: none; }
 .bottom-wave { width: 100%; position: absolute; bottom: 0; }
 
-/* Service Section Styles */
+/* Services Section */
 #services { padding: 80px 0; }
 .service-img { width: 100px; margin-top: 20px; }
 .services { padding: 20px; }
@@ -28,27 +40,56 @@ body { font-family: sans-serif; }
     display: block;
     margin: 20px auto 5px;
 }
+.btn-primary {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 25px;
+    background-image: linear-gradient(to right, #a517ba, #5f1178);
+}
 
-/* About Us Section Styles */
+/* About Us Section */
 #about-us { background: #f8f9fa; padding-bottom: 50px; padding-top: 50px; }
 .about-title { font-size: 30px; font-weight: 600; margin-top: 8%; }
 #about-us ul li { margin: 10px 0; }
 
-/* Testimonials Section Styles */
-#testimonials { padding: 80px 0; }
+/* Testimonials Section */
+#testimonials { padding: 100px 0; }
 .testimonials {
     border-left: 4px solid #a517ba;
     margin: 50px auto;
     background: #fff;
-    padding: 20px;
-    cursor: pointer;
 }
-.testimonials img { width: 60px; border-radius: 50%; margin-top: 20px; }
+.testimonials p { padding: 0 15px; font-style: italic; }
+.testimonials img { width: 60px; border-radius: 50%; margin-left: 15px; margin-top: 20px; }
 .user-details { display: inline-block; margin-left: 20px; }
 
-/* Footer Section Styles */
-#footer { background-image: linear-gradient(to right, #a517ba, #5f1178); color: #fff; }
-.footer-wave { width: 100%; }
+/* Social Media Section */
+#social-media { padding: 100px 0; background-color: #f8f9fa; }
+#social-media p { font-size: 36px; font-weight: 600; margin-bottom: 30px; }
+.social-icons img { width: 60px; transition: 0.5s; margin: 0 10px; }
+.social-icons a:hover img { transform: translateY(-10px); }
+
+/* Footer Section */
+#footer {
+    background-image: linear-gradient(to right, #a517ba, #5f1178);
+    color: #fff;
+    margin-top: -5px; /* Removes tiny gap between wave and background */
+}
+.footer-wave { width: 100%; background: #f8f9fa; }
 .footer-box { padding: 20px; }
 .footer-box img { width: 120px; margin-bottom: 20px; }
-.copyright { margin-bottom: 0; padding-bottom: 20px; }
+.footer-box .fa { margin-right: 10px; font-size: 20px; }
+.footer-box .form-control {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+}
+.footer-box .btn-primary {
+    background-image: none;
+    background-color: #fff;
+    color: #000;
+    margin-top: 10px;
+}
+.copyright { margin-bottom: 0; padding-bottom: 20px; text-align: center; }
