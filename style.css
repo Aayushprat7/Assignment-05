@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; }
 body { font-family: sans-serif; }
 
-/* Navigation Bar */
+/* Navigation */
 #nav-bar {
     position: sticky;
     top: 0;
@@ -15,7 +15,7 @@ body { font-family: sans-serif; }
 .navbar-nav li { padding: 0 10px; }
 .navbar-nav li a { color: #fff !important; font-weight: 600; float: right; }
 
-/* Banner Section */
+/* Banner */
 #banner {
     background-image: linear-gradient(to right, #a517ba, #5f1178);
     color: #fff;
@@ -27,7 +27,7 @@ body { font-family: sans-serif; }
 #banner a { color: #fff; text-decoration: none; }
 .bottom-wave { width: 100%; position: absolute; bottom: 0; }
 
-/* Services Section */
+/* Services */
 #services { padding: 80px 0; }
 .service-img { width: 100px; margin-top: 20px; }
 .services { padding: 20px; }
@@ -48,12 +48,12 @@ body { font-family: sans-serif; }
     background-image: linear-gradient(to right, #a517ba, #5f1178);
 }
 
-/* About Us Section */
+/* About Us */
 #about-us { background: #f8f9fa; padding-bottom: 50px; padding-top: 50px; }
 .about-title { font-size: 30px; font-weight: 600; margin-top: 8%; }
 #about-us ul li { margin: 10px 0; }
 
-/* Testimonials Section */
+/* Testimonials */
 #testimonials { padding: 100px 0; }
 .testimonials {
     border-left: 4px solid #a517ba;
@@ -64,19 +64,27 @@ body { font-family: sans-serif; }
 .testimonials img { width: 60px; border-radius: 50%; margin-left: 15px; margin-top: 20px; }
 .user-details { display: inline-block; margin-left: 20px; }
 
-/* Social Media Section */
-#social-media { padding: 100px 0; background-color: #f8f9fa; }
+/* Social Media & Wave Gap Fix */
+#social-media { 
+    padding: 100px 0 0 0; 
+    background-color: #fff; 
+    text-align: center; 
+}
 #social-media p { font-size: 36px; font-weight: 600; margin-bottom: 30px; }
+.social-icons { padding-bottom: 50px; }
 .social-icons img { width: 60px; transition: 0.5s; margin: 0 10px; }
 .social-icons a:hover img { transform: translateY(-10px); }
 
-/* Footer Section */
+/* Footer */
 #footer {
     background-image: linear-gradient(to right, #a517ba, #5f1178);
     color: #fff;
-    margin-top: -5px; /* Removes tiny gap between wave and background */
 }
-.footer-wave { width: 100%; background: #f8f9fa; }
+.footer-wave { 
+    width: 100%; 
+    display: block; 
+    margin-top: -2px; /* Pulls wave up to touch white background */
+}
 .footer-box { padding: 20px; }
 .footer-box img { width: 120px; margin-bottom: 20px; }
 .footer-box .fa { margin-right: 10px; font-size: 20px; }
@@ -92,4 +100,4 @@ body { font-family: sans-serif; }
     color: #000;
     margin-top: 10px;
 }
-.copyright { margin-bottom: 0; padding-bottom: 20px; text-align: center; }
+.copyright { margin-bottom: 0; padding: 20px 0; text-align: center; }
